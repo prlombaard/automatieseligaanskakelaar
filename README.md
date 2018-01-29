@@ -1,5 +1,5 @@
 # automatieseligaanskakelaar
-ESP8266 project that enables a light or peripheral to be swtiched on automatically when a certain wifi client device comes in range of the server wifi device
+ESP8266 project that enables a light or peripheral to be switched on automatically when a certain wifi client device comes in range of the server wifi device
 
 # Background / References
 This project was inspired by a project listed on hackaday.com (TODO: Add link to that project). The idea is that a specific programmed device such as an ESP8266 is used as an automatic (remote control) for a garage and light to send when a person is disembarking from the home or returning home.
@@ -11,6 +11,27 @@ The following hardware is required:
   * 1 x USB to serial converter
   * 1 x Battery Pack, that will power the NodeMCU
   
+# Hardware connections
+## Client
+The following is the hardware connections for the NodeMCU (client device) during **programming / flashing**:
+  * Connect NodeMCU to PC via USB cable - for programming
+
+The following is the hardware connections for the NodeMCU (client device) during **normal operations**:
+  * Connect NodeMCU to battery power bank
+
+## Server
+The following is the hardware connections for the NodeMCU (server device) during **programming / flashing**:
+  * Connect ESP8266 PINS on a breadboard as follows:
+    * VCC to 3.33 VDC
+    * GND to Ground
+    * GPIO (**TODO**)
+    * GPIO (**TODO**)
+    * GPIO (**TODO**)
+    * GPIO (**TODO**)
+
+The following is the hardware connections for the NodeMCU (client device) during **normal operations**:
+  * Connect NodeMCU to battery power bank
+
 # Setup Instructions (client)
 The following steps should be taken to program the various ESP8266 MCUs:
   * Install the latest Arduino IDE
